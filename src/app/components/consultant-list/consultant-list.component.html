@@ -1,0 +1,8 @@
+<div class="container">
+    <h1>Human craft</h1>
+
+    <div class="table-panel">
+        <app-table #table (emitRowClicked)="handleRowClick($event)" (emitCloseDetailPanel)="handleClosePanel()"></app-table>
+        <app-detail-panel #detail [appToggleDetailPanel]="isPanelVisible"></app-detail-panel>
+    </div>
+</div>

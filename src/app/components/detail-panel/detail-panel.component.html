@@ -1,0 +1,38 @@
+<div class="detail-container">
+
+    <div>
+        @for (item of rowDetail; track item) {
+        <ul class="custom-list">
+            <li>
+                <span class="left-text">Nom</span>
+                <span class="right-text">{{item.user.lastName}}</span>
+            </li>
+            <li>
+                <span class="left-text">Prénom</span>
+                <span class="right-text">{{item.user.firstName}}</span>
+            </li>
+            <li>
+                <span class="left-text">Rôle</span>
+                <span class="right-text">{{item.role}}</span>
+            </li>
+            <li>
+                <span class="left-text">Statut</span>
+                <span class="right-text">{{item.status.label}}</span>
+            </li>
+            <li>
+                <span class="left-text">Année d'experience</span>
+                <span class="right-text">{{item.experiencesYears}}</span>
+            </li>
+            <li>
+                <span class="left-text">Disponibilité</span>
+                <span class="right-text">{{item.availabilityDate}}</span>
+            </li>
+            <li>
+                <span class="left-text">TJM</span>
+                <span class="right-text">{{item.dailyRate | currency:'EUR':'symbol' }}</span>
+            </li>
+        </ul>
+        }
+    </div>
+
+</div>
